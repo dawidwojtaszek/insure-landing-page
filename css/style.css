@@ -254,6 +254,23 @@ header {
   color: #fff;
   max-width: 530px;
   z-index: 1;
+  position: relative;
+}
+
+.hero-section .info-box ::before {
+  content: '';
+  position: absolute;
+  top: -70px;
+  left: 0;
+  background-color: #fff;
+  width: 150px;
+  height: 1px;
+}
+
+@media (max-width: 900px) {
+  .hero-section .info-box ::before {
+    display: none;
+  }
 }
 
 @media (max-width: 900px) {
@@ -293,9 +310,9 @@ header {
 }
 
 .hero-section .info-box .hero-title {
-  font-size: 4.5rem;
+  font-size: 4rem;
   max-width: 480px;
-  line-height: 4rem;
+  line-height: 3.8rem;
 }
 
 .hero-section .info-box .hero-text {
@@ -318,7 +335,7 @@ header {
 }
 
 .hero-btn {
-  width: 165px;
+  width: 175px;
 }
 
 .hero-container {
@@ -365,7 +382,7 @@ header {
 }
 
 .about-container {
-  padding-top: 210px;
+  padding-top: 170px;
   color: #2b272f;
 }
 
@@ -376,14 +393,14 @@ header {
 }
 
 .section-heading {
-  font-size: 4.5rem;
+  font-size: 4rem;
   position: relative;
   margin-bottom: 100px;
 }
 
 @media (max-width: 900px) {
   .section-heading {
-    font-size: 4rem;
+    font-size: 3.8rem;
   }
 }
 
@@ -485,8 +502,8 @@ header {
 }
 
 .find-out-box .find-out-title {
-  font-size: 3.5rem;
-  line-height: 3rem;
+  font-size: 3.2rem;
+  line-height: 2.9rem;
   max-width: 480px;
   color: #fff;
 }

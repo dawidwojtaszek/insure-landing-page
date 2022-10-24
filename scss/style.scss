@@ -138,6 +138,19 @@ header{
     color:#fff;
     max-width: 530px;
     z-index: 1;
+    position: relative;
+              & ::before {
+                  content: '';
+                  position: absolute;
+                  top: -70px;
+                  left: 0;
+                  background-color: #fff;
+                  width: 150px;
+                  height: 1px;
+                  @media(max-width: 900px){
+                    display: none;
+                  }
+                }
     @media(max-width:900px){
       position:relative;
       max-width: 100%;
@@ -173,9 +186,11 @@ header{
     
     
       & .hero-title {
-          font-size: 4.5rem;
+          font-size: 4rem;
           max-width:480px;
-          line-height: 4rem;
+          line-height: 3.8rem;
+      
+
         }
       & .hero-text{
         line-height: 1.5rem;
@@ -195,7 +210,7 @@ header{
 
 }
 .hero-btn{
-  width: 165px;
+  width: 175px;
 }
 .hero-container{
   display: flex;
@@ -224,7 +239,7 @@ header{
   }
 }
 .about-container{
-  padding-top: 210px;
+  padding-top: 170px;
   color:$very-dark-violet;
   @media(max-width:900px){
     text-align: center;
@@ -232,11 +247,11 @@ header{
   }
 }
 .section-heading{
-  font-size: 4.5rem;
+  font-size: 4rem;
   position: relative;
   margin-bottom: 100px;
   @media(max-width:900px){
-    font-size: 4rem;
+    font-size: 3.8rem;
   }
   &:before{
   content: '';
@@ -293,8 +308,8 @@ header{
       background-position: right top;
     }
     & .find-out-title{
-      font-size: 3.5rem;
-      line-height: 3rem;
+      font-size: 3.2rem;
+      line-height: 2.9rem;
       max-width: 480px;
       color:#fff;
           @media(max-width:900px) {
